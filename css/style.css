@@ -1,0 +1,303 @@
+/* index.html */
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #F4F2F2;
+}
+.header
+{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)) ,url(../images/7iDtwvGWeO.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.line
+{
+    border-right: 2px solid black;
+     height: 100vh; 
+     writing-mode: vertical-rl;
+    text-orientation: mixed; 
+     width: 60px; 
+    background-color: #cccccc;
+     
+}
+.line li
+{
+    list-style: none;
+    display: inline-block;
+    margin: 40px 0 40px 0;
+}
+
+.line a:link ,.line a:active ,.line a:hover ,.line a:visited
+{
+    text-decoration: none;
+    color: #546F8F;
+    font-size: 25px;
+
+    
+}
+.line i
+{
+    font-size: 45px;
+}
+.banner-h h1
+{
+    font-size: 96px;
+    font-weight: lighter;
+    color: white;
+    text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    letter-spacing: -1.5px;
+    /* line-height: 100px; */
+}
+.banner-h p
+{
+    color:#C1ADA0;
+    position: absolute;
+    top: 70%;
+    left: 11%;
+    transform: translateY(-50%);
+    font-size: 40px;
+    /* font-family: 'Philosopher', sans-serif; */
+}
+
+.banner-info
+{
+    width: 300px;
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    color: #F9FAFC;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    margin: 0px 20px;
+    font-size: 20px;
+    opacity: 0;
+    transition: 0.6s;
+    border-radius: 20px;
+    /* font-family: 'Questrial', sans-serif; */
+}
+.header:hover .banner-info
+{
+    opacity: 1;
+}
+
+.view
+{
+    position: absolute;
+    top: 67%;
+    left: 20%;
+
+}
+
+/* Work.html */
+.box1
+{
+    /* position: absolute;
+    top: 15%;
+    left: 10%; */
+    margin: 3% 5% 0% 5%;
+} 
+.box1 div
+{
+    transition: 0.5s;
+    cursor: pointer;
+    /* width: 500px;
+    height: 300px; */
+    background-color: rgba(204, 204, 204, 0.507);
+}
+
+.box1 h2
+{
+    padding: 100px 20px;
+    color: black;
+
+}
+.box1 a:link ,.box1 a:active
+{
+    text-decoration: none;
+   
+}
+.box1 div:hover
+{
+    transform:scale(1.1,1.1);
+}
+ .box2
+{
+    /* position: absolute;
+    bottom: 20%;
+    right:  0%; */
+    margin: 0% 5% 0% 0%;
+} 
+.box2 div
+{
+    transition: 0.5s;
+    cursor: pointer;
+    /* width: 500px;
+    height: 300px; */
+    background-color: rgba(204, 204, 204, 0.507);
+}
+.box2 a:link ,.box2 a:active
+{
+    text-decoration: none;
+   
+}
+.box2 div:hover
+{
+    transform:scale(1.1,1.1);
+}
+
+.box2 h2
+{
+    padding: 100px 20px;
+    color: black;
+
+}
+
+
+
+/* FrontEnd */
+
+.header1
+{
+    height: 100vh;
+}
+
+.part1  ,.part11
+{
+    border-right: 2px solid black;
+    height: 100vh;
+     position: relative;
+     /* margin-left:10px; */
+     /* padding: 10px 10px 0 10px; */
+
+}
+.part1 h3
+{
+    font-size: 50px;
+    font-weight: 100;
+}
+.work
+{
+    height: 100vh;
+}
+.us-lan
+{
+    font-size: 20px;
+}
+/*               About           */
+
+.part2 h1,.part2 h2
+{
+    /* font-family: 'Playfair Display', serif; */
+    font-size: 90px;
+}
+
+.part2 h1::after
+{
+    content:"";
+    display: block;
+    height: 5px;
+    width: 250px;
+    background-color: black;
+}
+.ban
+{
+    margin-top: 15%;
+}
+
+
+/* when screen is small */
+@media only screen and (max-width:900px) 
+{
+    .banner-h h1
+    {
+        font-size: 45px;
+        font-weight: 0;
+        color: white;
+        text-transform: uppercase;
+        position: absolute;
+        top: 25%;
+        left : 20%;
+        transform: translateY(-50%); 
+        line-height:50px;
+    }
+    .banner-h p
+    {
+        color: rgb(192, 191, 191);
+        position: absolute;
+        top: 40%;
+        left: 20%;
+        transform: translateY(-50%);
+        font-size: 40px;
+    }
+
+    .banner-info
+    {
+        width: 70%;
+        font-size: 12px;
+    
+    }
+
+    .line
+    {
+         width: 50px;  
+    }
+    .line li
+    {
+        margin: 20px 0 20px 0;
+    }
+    
+    .line a:link ,.line a:active ,.line a:hover ,.line a:visited
+    {
+
+        font-size: 20px;
+    
+        
+    }
+    .line i
+    {
+        font-size: 30px;
+    }  
+    .box1 h2
+    {
+        text-align: center;
+        font-size: 45px;
+    }
+    .box2 ,.box1
+    {
+     
+        margin: 2%;
+    }  
+    .box2 h2
+    {
+        text-align: center;
+        font-size: 45px;
+    }
+
+    .part1 
+    {
+    
+     border-right: 0px none transparent;
+     border-bottom: 2px solid black;
+     margin-right:0px;
+     padding-left: 45px;
+    }
+    .part11
+    {
+        display: none; 
+    }
+    .part1 h3
+    {
+        font-size: 30px;
+        font-weight: 100;
+    }
+    .part2 h1,.part2 h2
+    {
+        
+        font-size: 50px;
+    }
+}
